@@ -1,0 +1,1 @@
+Calculate the number of grains of whear on achessboard given that the number on each square doubles. there are 64 squares on a chessboard, square 1 has 1 grain, square 2 has 2 grains 

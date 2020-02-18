@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Mike",
+    "age": 23,
+    "gender": "m",
+    "coder":true,
+    "us": false,
+    "location": "bangalore"
+  },
+  {
+    "name": "Liz",
+    "age": 20,
+    "gender": "f",
+    "coder":false,
+    "us": true,
+    "location": "texas"
+  },
+  {
+    "name": "Chris",
+    "age": 102,
+    "gender": "m",
+    "coder":true,
+    "us": true,
+    "location": "new york"
+  },
+  {
+    "name": "Chuloo",
+    "age": 27,
+    "gender": "m",
+    "coder":false,
+    "us": false,
+    "location": "jakarta"
+  },
+  {
+    "name": "Annie",
+    "age": 30,
+    "gender": "f",
+    "coder":true,
+    "us": true,
+    "location": "las vegas"
+  }
+]
