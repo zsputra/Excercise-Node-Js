@@ -1,0 +1,25 @@
+{
+  "name": "anagram_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node lib/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/vision": "^6.0.0",
+    "axios": "^0.19.2",
+    "hapi": "^18.1.0",
+    "hapi-swagger": "^12.1.0",
+    "mongodb": "^3.5.3",
+    "nodemon": "^2.0.2",
+    "package": "^1.0.1",
+    "path": "^0.12.7",
+    "uniqid": "^5.2.0"
+  }
+}

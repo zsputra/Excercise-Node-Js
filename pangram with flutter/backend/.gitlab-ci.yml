@@ -1,0 +1,22 @@
+stages:
+  - test
+  - deploy
+  
+pangram-test:
+  stage: test
+  image: node:lts-slim
+  script:
+    - npm install
+    - npm test
+
+  
+pangram-deploy:
+  stage: deploy
+  image: ruby:latest
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=pangram-service --api-key=bcc3d61b-0bfb-4a55-9aa5-aba7bd133489
+  only:
+    - master

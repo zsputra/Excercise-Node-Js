@@ -1,18 +1,27 @@
 var urlList = require('./people.json');
 
-var older_24  =urlList.filter(function(e){
+
+const filter_age = function(e){
     return e.age > 24;
-})
+}
 
-var total = urlList.reduce((accumulator,y)=>{
-        return accumulator+y.age;
-},0)
+const sum_age = function(accumulator,y){
+    return accumulator+y.age;
+}
 
-var female_coder = urlList.filter(function(e){
+const female = function(e){
     return e.gender == 'f';
-})
+}
 
-function compare(a, b) {
+var older_24  =urlList.filter(filter_age);
+
+var total = urlList.reduce(sum_age,0)
+
+
+var female_coder = urlList.filter(female)
+
+
+const compare = function(a, b) {
     // Use toUpperCase() to ignore character casing
     const bandA = a.name.toUpperCase();
     const bandB = b.name.toUpperCase();
@@ -26,14 +35,18 @@ function compare(a, b) {
     return comparison;
   }
 
-var us_asc = urlList.filter(function(e){
+const usaFunction = function(e){
     return e.us == true;
-}).sort(compare);
+}
 
+var us_asc = urlList.filter(usaFunction).sort(compare);
 
-var sort_by_age = urlList.sort(function(a,b){
+const compare_age = function(a,b){
     return a.age - b.age;
-})
+}
+
+var sort_by_age = urlList.sort(compare_age)
+
 
 var total_under_25 = urlList.filter(function(e){
     return e.age < 25;
@@ -50,3 +63,10 @@ var total_3_city = urlList.filter((e)=>{
 }).reduce((acc, a)=>{
     return acc + a.age;
 },0);
+
+function isPangram(string) {
+    var regex = /([a-z])(?!.*\1)/g;
+    return (string.match(regex) || []).length === 26;
+}
+
+

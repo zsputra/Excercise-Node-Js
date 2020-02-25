@@ -1,0 +1,8 @@
+Abcdefghijklmnopqrstuvwxyz return true.
+the quick brown fox jumps over the lazy dog.
+a quick movement of the enemy will jeopardize five gunboats return false.
+Pack my box with five dozen liquor jugs. return true.
+five boxing wizards jump quickly at it return true.
+7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog return false.
+The_quick_brown_fox_jumps_over_the_lazy_dog.
+Five quacking Zephyrs jolt my wax bed. return false.
